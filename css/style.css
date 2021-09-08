@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+    --headings:  'Coda Caption', sans-serif;
+    --bodyFont:  'Open Sans', sans-serif;
+    --fontSize: 16px;
+    --lightGray: #f6f6f6;
+    --white: #fff;
+}
