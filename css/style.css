@@ -42,6 +42,30 @@ ul {
 .active {
     color: var(--primary);
 }
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 100px 0;
+}
+button {
+    padding: 15px 40px;
+    margin-top: 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h2::before {
+    display: block;
+    content: "";
+    width: 40px;
+    background: var(--primary);
+    height: 3px;
+    margin-bottom: 10px;
+}
 
 /* topbar */
 
@@ -82,10 +106,54 @@ nav ul li a:hover{
     color: var(--primary);
 }
 
+/* header  */
 
+header {
+    background-image: url(../img/header.jpg);
+    padding: 200px 0;
+    background-position: center top;
+    background-size: cover;
+}
+header article {
+    width: 30%;
+    padding: 40px;
+    background: rgba(255,255,255,.7);
+    margin-left: 15%;
+}
+header button {
+    background: var(--primary);
+    border: none;
+    color: var(--white);
 
+}
+header button:hover {
+    background: var(--black);
+}
+header h1::after {
+    display: block;
+    content: "";
+    width: 40px;
+    background: var(--primary);
+    height: 3px;
+    margin: 20px 0;
+}
 
+/* featured items */
 
+.featuredItems h2 {
+    margin-bottom: 30px;
 
+}
+.owl-carousel .item {
+    border: 1px solid var(--borders);
+    padding: 30px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.owl-carousel .item:hover {
+    border: 1px solid var(--primary);
+}
 
+/* subscribe */
 
+.subscribe
