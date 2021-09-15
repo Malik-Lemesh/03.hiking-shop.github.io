@@ -47,6 +47,11 @@ ul {
     margin: auto;
     padding: 100px 0;
 }
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
 button {
     padding: 15px 40px;
     margin-top: 25px;
@@ -66,7 +71,12 @@ h2::before {
     height: 3px;
     margin-bottom: 10px;
 }
-
+hr {
+    margin: 20px 0;
+    border: none;
+    background: var(--lightGray);
+    height: 1px;
+}
 /* topbar */
 
 .topbar {
@@ -224,4 +234,65 @@ footer.icons a i:hover {
 footer article:last-child {
     border-top: 1px solid var(--lightGray);
     padding: 15px 0;
+}
+/* products */
+
+.products .item img {
+    width: 100%;
+}
+.products .item {
+    width: 20%;
+    float: left;
+    border: 1px solid var(--borders);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.products .item:hover {
+    border: 1px solid var(--primary)
+}
+/* single */
+
+.single h2 {
+    margin-bottom: 20px;
+}
+.single article div:first-child {
+    float: left;
+    width: 40%;
+}
+.single article div:last-child {
+    float: right;
+    width: 55%;
+}
+.single img {
+    width: 100%;
+    border:  1px solid var(--primary);
+    border-radius: 10px;
+}
+.single h3 {
+    font-size: 1.7rem;
+}
+.single .price {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+.single p {
+    font-weight: 300;
+    padding: 10px 0;
+}
+.single button {
+    background: var(--primary);
+    border: none;
+    color: var(--white);
+    transition: var(--transition);
+}
+.single button:hover {
+    background: var(--black);
+}
+.single select {
+    border: 1px solid var(--primary);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0 10px;
 }
