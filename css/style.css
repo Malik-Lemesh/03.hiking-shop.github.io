@@ -296,3 +296,15 @@ footer article:last-child {
     border-radius: 5px;
     margin: 0 10px;
 }
+/* about */
+.about img {
+    width: 100%;
+}
+.about article:first-child {
+    float: left;
+    width: 40%;
+}
+.about article:last-child {
+    float: right;
+    width: 55%;
+}
