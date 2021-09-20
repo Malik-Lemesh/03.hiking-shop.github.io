@@ -297,14 +297,21 @@ footer article:last-child {
     margin: 0 10px;
 }
 /* about */
+
+.about h2 {
+    margin-bottom: 20px;
+}
 .about img {
     width: 100%;
 }
-.about article:first-child {
+.about div:nth-child(1){
     float: left;
     width: 40%;
 }
-.about article:last-child {
+.about div:nth-child(2) {
     float: right;
     width: 55%;
+}
+.about div:nth-child(2) p {
+    padding-bottom: 30px;
 }
