@@ -335,5 +335,49 @@ footer article:last-child {
 .contact textarea {
     width: 100%;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 15px;
+}
+
+/* responsive */
+
+@media(max-width:767px){
+    nav ul li{
+        display:inline-block;
+        margin: 20px;
+    }
+    header article{
+        width: 90%;
+        padding: 40px;
+        margin: auto;
+    }
+    header{
+        padding: 100px 0;
+        background-position: center right;
+
+    }
+    .products .item{
+        width: 100%;
+        float: none;
+        margin: 20px auto;
+    }
+    .container{
+        width: 90%;
+        padding: 50% 0;
+    }
+    .about div:nth-child(1),
+    .about div:nth-child(2),
+    .contact article div:first-child,
+    .contact article div:last-child{
+        width: 100%;
+    }
+    
+}
+@media(max-width:500px){
+    nav ul li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    nav ul li a {
+        font-size: .8rem;
+    }
 }
